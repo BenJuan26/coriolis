@@ -9,11 +9,7 @@ cache:
     - node_modules
 
 before_install:
-  - pushd /home/travis/build/BenJuan26
-  - git clone https://github.com/EDCD/coriolis-data.git
-  - popd
-
-before_script:
+  - git clone https://github.com/EDCD/coriolis-data.git ../coriolis-data
 
 script:
   - npm run lint
